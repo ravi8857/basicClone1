@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+    <div class="login-container">
+        <h1>login</h1>
+        <input type="Email" placeholder="Email" id="name" required>
+        <input type="password" placeholder="password" id="pass" required><br>
+
+
+        <input type="checkbox" value="password">show the password</input>
+    
+        <button type="submit" id="btn">login</button>
+        <p id="err-msg"></p>
+
+        <p>Forgot <a href="#" >username</a>/ <a href="#">Password?</a></p>
+    </div>
+    </form>
+
+
+    <script>
+
+       const name=document.getElementById('name')
+        const password=document.getElementById('pass')
+        const btn=document.getElementById('btn')
+        const error=document.getElementById('err-msg')
+
+        btn.addEventListener('click',(e)=>{
+           e.preventDefault()
+          if(!name.value || !password.value){
+        error.textContent='ivalid user'
+        return
+          }
+            if(name.value === 'admin' && password.value === 'pass'){
+               alert('login successfully')
+               error.textContent=''
+            }else{
+               error.textContent='invalid username or password'
+           }
+
+       })
+        
+
+
+    </script>
+   
+</body>
+</html> 
+
+
+

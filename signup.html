@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div class="login-container">
+            <h1>SignUp</h1>
+            <input type="name" placeholder="Name" id="admin"  required>
+            <input type="Email" placeholder="Email" id="eme" required>
+            <input type="password" placeholder="password" id="result" required><br>
+           
+            <button type="submit"  id="sub">SignUp</button>
+            <p id="error-msg"></p>
+
+        </div>
+        </form>
+
+        <script>
+            const name=document.getElementById('admin')
+            const email=document.getElementById('eme');
+            const password=document.getElementById('result')
+            const button=document.getElementById('sub');
+            const error=document.getElementById('error-msg')
+
+            button.addEventListener('click',(e)=>{
+                e.preventDefault()
+
+                if(!name || !email || !password){
+                    error.textContent="please fill the all feilds"
+                    return;
+                }
+                if('name === admin && password === result && email === eme'){
+                    alert('login successfully')
+                    error.textContent=''
+                }else{
+                    error.textContent="these fields is invalid"
+                    
+                }
+            })
+        </script>
+
+</body>
+</html>

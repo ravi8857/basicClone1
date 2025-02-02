@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(https://miro.medium.com/v2/resize:fit:1200/1*xMuIOwjliGUPjkzukeWKfw.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    height: 300px;
+}
+.containers{
+   color: rgba(2, 24, 27, 0.856); 
+   padding: 10px;
+   
+}
+.containers h4{
+    color: rgb(222, 0, 230);
+    font-size: 30px;
+}
+
+.containers h1,h4{
+    text-align: center;
+    padding: 10px;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+    
+}
+
+button:hover{
+    background-color: rgb(118, 107, 221);
+}
+
+section{
+    padding: 20px;
+    display: flex;
+}
+.container1{
+   height: 25vh;
+    width: 30%;
+    border: 2px solid black;
+    padding-top: 20px;
+}
+
+.container1 h2,p{
+    text-align: center;
+}
+
+.container2{
+    height: 25vh;
+     width: 30%;
+     border: 2px solid black;
+     padding-top: 20px;
+     margin-left: 50px;
+
+ }
+ .container2 h2,p{
+    text-align: center;
+}
+
+ .container3{
+    height: 25vh;
+     width: 30%;
+     border: 2px solid black;
+     padding-top: 20px;
+     margin-left: 50px;
+
+ }
+ .container3 h2,p{
+    text-align: center;
+}
+
+footer p{
+    height: 5vh;
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgb(53, 49, 49);
+    color: white;
+}
